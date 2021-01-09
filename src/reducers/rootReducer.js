@@ -6,4 +6,4 @@ const rootReducer = combineReducers({
     contact: contactReducer
 })
 
-export const rootReducer;
+export default rootReducer;

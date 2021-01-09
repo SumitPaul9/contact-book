@@ -36,4 +36,7 @@ import { CREATE_CONTACT,
         type: CLEAR_CONTACT
     })
 
+    export const deleteAllContact = () => ({
+        type: DELETE_SELECTED_CONTACT,
+      });
     

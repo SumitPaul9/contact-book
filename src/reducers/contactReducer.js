@@ -1,4 +1,12 @@
-const intialState = {
+import { CREATE_CONTACT,
+        GET_CONTACT,
+        UPDATE_CONTACT,
+        DELETE_CONTACT,
+        SELECT_CONTACT,
+        CLEAR_CONTACT,
+        DELETE_SELECTED_CONTACT } from '../actions/constants';
+        
+const initialState = {
     contacts: [{
             id: 1,
             name: "Leanne Graham",
@@ -251,7 +259,7 @@ export const contactReducer = (state = initialState, action) => {
             );
             arr = arr.values();
             for (let val of arr) {
-                arr = val;
+                arr = val; 
             }
             return {
                 ...state,
