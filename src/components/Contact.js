@@ -2,7 +2,7 @@ import { useDispatch } from "react-redux"
 import { Link } from "react-router-dom"
 import { deleteContact } from '../actions/contactActions'
 import Avatar from 'react-avatar';
-import { AiTwotoneEdit } from 'react-icons';
+import EditIcon from '@material-ui/icons/Edit';
 
 const Contact = ({ contact, selectAll }) => {
     const dispatch = useDispatch();

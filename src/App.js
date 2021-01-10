@@ -5,6 +5,7 @@ import './styles/App.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { Provider } from 'react-redux';
 import store from "./store";
+import UpdateContact from './container/UpdateContact';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
           <Switch>
             <Route exact path="/" component={ContactList}/>
             <Route exact path="/contacts/add" component={AddContact}/>
+            <Route exact path="/contacts/edit/:id" component={UpdateContact}/>
           </Switch>
         </Router>
       </div>
